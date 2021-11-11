@@ -2,21 +2,21 @@ package ru.netology.domain;
 
 public class ReactionInformation {
     private int counter;
-    private boolean isReacted;
+    private int[] userReacted;
 
-    public int getCount() {
+    public int getCounter() {
         return counter;
     }
 
-    public void setCount(int counter) {
+    public void setCounter(int counter) {
         this.counter = counter;
     }
 
-    public boolean getIsReacted() {
-        return isReacted;
+    public int[] getUserReacted() {
+        return userReacted;
     }
 
-    public void setIsReacted(boolean isReacted) {
-        this.isReacted = isReacted;
+    public void setUserReacted(int[] userReacted) {
+        this.userReacted = userReacted;
     }
 }

@@ -2,21 +2,30 @@ package ru.netology.domain;
 
 public class CommentInformation {
     private int counter;
-    private boolean canPost;
+    private int[] canPost;
+    private int[] groupsCanPost;
 
-    public int getCount() {
+    public int getCounter() {
         return counter;
     }
 
-    public void setCount(int counter) {
+    public void setCounter(int counter) {
         this.counter = counter;
     }
 
-    public boolean getCanPost() {
+    public int[] getCanPost() {
         return canPost;
     }
 
-    public void setCanPost(boolean canPost) {
+    public void setCanPost(int[] canPost) {
         this.canPost = canPost;
+    }
+
+    public int[] getGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(int[] groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 }
